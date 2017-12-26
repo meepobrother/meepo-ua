@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { VersionnComponent } from './version';
-
+import { UaService } from './ua.service';
 @NgModule({
     declarations: [
-        VersionnComponent
     ],
     imports: [ CommonModule ],
     exports: [],
-    providers: [],
+    providers: [
+        UaService
+    ],
 })
-export class AppModule {}
+export class UaModule {}
+export { UaService } from './ua.service';

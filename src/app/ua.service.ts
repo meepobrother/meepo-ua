@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-declare const require: any;
-var parser = require('ua-parser-js');
 
 @Injectable()
 export class UaService {

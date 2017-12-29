@@ -4,16 +4,8 @@ var parser = require('ua-parser-js');
 
 @Injectable()
 export class UaService {
-    ua: any = parser();
+    ua: any = navigator.userAgent.toLowerCase();
     constructor() { }
-    //是否ios
-    isIos() {
-        return this.ua.os.name === 'iOS';
-    }
-    //是否android
-    isAndroid() {
-        return this.ua.os.name === 'Android';
-    }
     // 是否微信
     isWechat() {
         let ua = this.ua.ua.toLowerCase();

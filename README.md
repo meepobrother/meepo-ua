@@ -21,3 +21,11 @@ wechat: {{ua.isWechat()}} <br>
 ispc: {{ua.isPc()}} <br>
 ```
 
+```ts
+import { UaService } from 'meepo-ua';
+export class AppComponent implements OnInit {
+  constructor(
+    public ua: UaService
+  ) {}
+}
+```
